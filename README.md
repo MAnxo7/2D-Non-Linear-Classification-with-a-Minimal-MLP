@@ -12,7 +12,7 @@ The goal is to understand and analyze:
 
 ---
 
-## 🚀 Running an Experiment
+## Running an Experiment
 
 ```bash
 python main.py --epochs 100 --batch-size 32 --lr 0.01 --weight-decay 0.0
@@ -35,7 +35,7 @@ Every run automatically creates a folder inside `runs/` containing:
 
 ---
 
-## 🧠 Model Architecture
+## Model Architecture
 
 The project uses a deliberately simple MLP:
 
@@ -47,7 +47,7 @@ Designed this way **on purpose**, to make decision boundaries easy to interpret.
 
 ---
 
-## 📊 Example Outputs
+## Example Outputs
 
 Each run produces three key figures:
 
@@ -61,7 +61,7 @@ Each run produces three key figures:
 
 ---
 
-## 🧪 Experiment: Effect of Weight Decay
+## Experiment: Effect of Weight Decay
 
 Two runs are included:
 
@@ -79,7 +79,7 @@ Two runs are included:
 * Accuracy ≈ 50% (random).
 * Decision boundary collapses to a trivial separator.
 
-### 📌 Conclusion
+### Conclusion
 
 For this simple dataset, a small MLP *already generalizes extremely well*.
 Adding weight decay **does not improve** performance, and strong regularization can **completely prevent learning**.
@@ -88,7 +88,7 @@ This shows the **bias–variance trade-off** clearly.
 
 ---
 
-## 🧪 Possible Extensions
+## Possible Extensions
 
 * Add more layers or different activations (ReLU, GELU)
 * Increase dataset noise to observe real overfitting
@@ -96,6 +96,7 @@ This shows the **bias–variance trade-off** clearly.
 * Try Xavier / Kaiming initialization
 * Compare MLP vs Logistic Regression vs SVM
 * Perform a small hyperparameter grid search
+
 
 
 
